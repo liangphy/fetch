@@ -1,6 +1,6 @@
 <?php
 
-
+//test
 echo file_get_contents('http://weixin.sogou.com/weixin?type=2&ie=utf8&query=%E5%BC%A0%E7%BF%B0%E5%A8%9C%E6%89%8E');die;
 
 function getUrlContent($url, $set_ip) {
@@ -10,7 +10,7 @@ function getUrlContent($url, $set_ip) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
     curl_setopt($ch, CURLOPT_TIMEOUT, 30);
-    //Ö¸¶¨ÌØ¶¨µÄip
+    //Ö¸ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ip
     curl_setopt($ch, CURLOPT_INTERFACE, $set_ip);
     $data = curl_exec($ch);
 #var_dump($url,$data);
@@ -36,7 +36,7 @@ $set_ip=$_GET['set_ip'];
 
 
 #var_dump($url);
-#$url='http://weixin.sogou.com/weixin?type=2&ie=utf8&query=ÕÅº²ÄÈÔú';
+#$url='http://weixin.sogou.com/weixin?type=2&ie=utf8&query=ï¿½Åºï¿½ï¿½ï¿½ï¿½ï¿½';
 //var_dump($url);die;
 
 $rs=getUrlContent($url, $set_ip);
